@@ -44,6 +44,8 @@
 		3F6458F82A33D17500E3CFC4 /* CoreDataProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F6458FC2A33D17500E3CFC4 /* CoreDataProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectUITests.swift; sourceTree = "<group>"; };
 		3F6458FE2A33D17500E3CFC4 /* CoreDataProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F64590B2A33D1D700E3CFC4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3F64590D2A33D23200E3CFC4 /* todo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = todo.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,8 @@
 		3F6458D52A33D17300E3CFC4 = {
 			isa = PBXGroup;
 			children = (
+				3F64590C2A33D22800E3CFC4 /* _docs */,
+				3F64590B2A33D1D700E3CFC4 /* README.md */,
 				3F6458E02A33D17300E3CFC4 /* CoreDataProject */,
 				3F6458F12A33D17500E3CFC4 /* CoreDataProjectTests */,
 				3F6458FB2A33D17500E3CFC4 /* CoreDataProjectUITests */,
@@ -125,6 +129,14 @@
 				3F6458FE2A33D17500E3CFC4 /* CoreDataProjectUITestsLaunchTests.swift */,
 			);
 			path = CoreDataProjectUITests;
+			sourceTree = "<group>";
+		};
+		3F64590C2A33D22800E3CFC4 /* _docs */ = {
+			isa = PBXGroup;
+			children = (
+				3F64590D2A33D23200E3CFC4 /* todo.md */,
+			);
+			path = _docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
