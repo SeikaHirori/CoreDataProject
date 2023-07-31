@@ -16,7 +16,11 @@ class DataController: ObservableObject {
             
             if let error = error {
                 print("Core Data failed to load: \(error.localizedDescription) ")
+                return
             }
+            
+            // This handles the duplicate objects based on their properties
+            self.container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
         }
     }
 }

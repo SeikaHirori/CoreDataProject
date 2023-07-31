@@ -12,7 +12,31 @@ struct section_1dot5: View {
     @FetchRequest(sortDescriptors: []) var wizards: FetchedResults<Wizard>
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+        return VStack {
+            HStack {
+                Button("Add") {
+                    let newWizard = Wizard(context: moc)
+                    newWizard.name = "Harry Potter"
+                }
+                
+                Button("Save") {
+                    do {
+                        if moc.hasChanges {
+                            try moc.save()
+                            print("new entries saved")
+                        }
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+            
+            List(wizards, id: \.self) { wizard in
+                Text(wizard.name ?? "Unknown")
+            }
+        }
+
     }
 }
 
