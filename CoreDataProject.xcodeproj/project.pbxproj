@@ -17,6 +17,8 @@
 		3F9576C52A780C54009E6647 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576C42A780C54009E6647 /* DataController.swift */; };
 		3F9576C82A780C7E009E6647 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576C62A780C7E009E6647 /* CoreDataProject.xcdatamodeld */; };
 		3F9576CB2A781805009E6647 /* section_1dot2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576CA2A781805009E6647 /* section_1dot2.swift */; };
+		3F9576CE2A781B29009E6647 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576CC2A781B29009E6647 /* Movie+CoreDataClass.swift */; };
+		3F9576CF2A781B29009E6647 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576CD2A781B29009E6647 /* Movie+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		3F9576C42A780C54009E6647 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataController.swift; path = CoreDataProject/View/DataController.swift; sourceTree = SOURCE_ROOT; };
 		3F9576C72A780C7E009E6647 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 		3F9576CA2A781805009E6647 /* section_1dot2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = section_1dot2.swift; sourceTree = "<group>"; };
+		3F9576CC2A781B29009E6647 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataClass.swift"; path = "CoreDataProject/Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F9576CD2A781B29009E6647 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "CoreDataProject/Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 		3F6458D52A33D17300E3CFC4 = {
 			isa = PBXGroup;
 			children = (
+				3F9576CC2A781B29009E6647 /* Movie+CoreDataClass.swift */,
+				3F9576CD2A781B29009E6647 /* Movie+CoreDataProperties.swift */,
 				3F64590C2A33D22800E3CFC4 /* _docs */,
 				3F64590B2A33D1D700E3CFC4 /* README.md */,
 				3F6458E02A33D17300E3CFC4 /* CoreDataProject */,
@@ -306,6 +312,8 @@
 				3F9576C52A780C54009E6647 /* DataController.swift in Sources */,
 				3F9576CB2A781805009E6647 /* section_1dot2.swift in Sources */,
 				3F9576C82A780C7E009E6647 /* CoreDataProject.xcdatamodeld in Sources */,
+				3F9576CE2A781B29009E6647 /* Movie+CoreDataClass.swift in Sources */,
+				3F9576CF2A781B29009E6647 /* Movie+CoreDataProperties.swift in Sources */,
 				3F6458E22A33D17300E3CFC4 /* CoreDataProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
