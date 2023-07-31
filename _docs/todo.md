@@ -2,8 +2,9 @@
 
 # Part 1
 [Specs](https://www.hackingwithswift.com/100/swiftui/57)
+`5 sections`
 
-- [ ] Core Data: Introduction
+- [x] Core Data: Introduction
 - [ ] Why does \.self work for ForEach?
 - [ ] Creating NSManagedObject subclasses
 - [ ] Conditional saving of NSManagedObjectContext
