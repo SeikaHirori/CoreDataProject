@@ -16,6 +16,7 @@
 		3F6458FF2A33D17500E3CFC4 /* CoreDataProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6458FE2A33D17500E3CFC4 /* CoreDataProjectUITestsLaunchTests.swift */; };
 		3F9576C52A780C54009E6647 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576C42A780C54009E6647 /* DataController.swift */; };
 		3F9576C82A780C7E009E6647 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576C62A780C7E009E6647 /* CoreDataProject.xcdatamodeld */; };
+		3F9576CB2A781805009E6647 /* section_1dot2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576CA2A781805009E6647 /* section_1dot2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		3F64590D2A33D23200E3CFC4 /* todo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = todo.md; sourceTree = "<group>"; };
 		3F9576C42A780C54009E6647 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataController.swift; path = CoreDataProject/View/DataController.swift; sourceTree = SOURCE_ROOT; };
 		3F9576C72A780C7E009E6647 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
+		3F9576CA2A781805009E6647 /* section_1dot2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = section_1dot2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		3F6458E02A33D17300E3CFC4 /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				3F9576C92A7817CF009E6647 /* Lesson_examples */,
 				3F9576C32A780C17009E6647 /* View */,
 				3F9576C22A780C0D009E6647 /* Model */,
 				3F6458E12A33D17300E3CFC4 /* CoreDataProjectApp.swift */,
@@ -159,6 +162,14 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3F9576C92A7817CF009E6647 /* Lesson_examples */ = {
+			isa = PBXGroup;
+			children = (
+				3F9576CA2A781805009E6647 /* section_1dot2.swift */,
+			);
+			path = Lesson_examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 			files = (
 				3F6458E42A33D17300E3CFC4 /* ContentView.swift in Sources */,
 				3F9576C52A780C54009E6647 /* DataController.swift in Sources */,
+				3F9576CB2A781805009E6647 /* section_1dot2.swift in Sources */,
 				3F9576C82A780C7E009E6647 /* CoreDataProject.xcdatamodeld in Sources */,
 				3F6458E22A33D17300E3CFC4 /* CoreDataProjectApp.swift in Sources */,
 			);
