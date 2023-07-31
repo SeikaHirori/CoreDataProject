@@ -8,5 +8,5 @@
 - [x] Why does \.self work for ForEach?
 - [x] Creating NSManagedObject subclasses
 - [x] Conditional saving of NSManagedObjectContext
-- [ ] Ensuring Core Data objects are unique using constraints
+- [x] Ensuring Core Data objects are unique using constraints
 
