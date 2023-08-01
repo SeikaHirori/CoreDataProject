@@ -10,8 +10,8 @@ import SwiftUI
 
 struct section_2dot1: View {
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: [], predicate: NSPredicate(format: "universe == 'Star Wars'")) var ships: FetchedResults<Ship>
-    
+    @FetchRequest(sortDescriptors: [], predicate: NSPredicate(format: "universe == %@", "Star Wars")) var ships: FetchedResults<Ship>
+        
     var body: some View {
         return VStack {
             List(ships, id: \.self) { ship in
