@@ -15,6 +15,6 @@
 
 `3 sections`
 
-- [ ] Filtering @FetchRequest using NSPredicate
+- [x] Filtering @FetchRequest using NSPredicate
 - [ ] Dynamically filtering @FetchRequest with SwiftUI
 - [ ] One-to-many relationships with Core Data, SwiftUI, and @FetchRequest
