@@ -20,6 +20,7 @@
 		3F9576CE2A781B29009E6647 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576CC2A781B29009E6647 /* Movie+CoreDataClass.swift */; };
 		3F9576CF2A781B29009E6647 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576CD2A781B29009E6647 /* Movie+CoreDataProperties.swift */; };
 		3F9576D12A782B0C009E6647 /* section_1dot5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576D02A782B0C009E6647 /* section_1dot5.swift */; };
+		3F9576D32A7833BB009E6647 /* section_2dot1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576D22A7833BB009E6647 /* section_2dot1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		3F9576CC2A781B29009E6647 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataClass.swift"; path = "CoreDataProject/Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3F9576CD2A781B29009E6647 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "CoreDataProject/Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F9576D02A782B0C009E6647 /* section_1dot5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = section_1dot5.swift; sourceTree = "<group>"; };
+		3F9576D22A7833BB009E6647 /* section_2dot1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = section_2dot1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			children = (
 				3F9576CA2A781805009E6647 /* section_1dot2.swift */,
 				3F9576D02A782B0C009E6647 /* section_1dot5.swift */,
+				3F9576D22A7833BB009E6647 /* section_2dot1.swift */,
 			);
 			path = Lesson_examples;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				3F6458E42A33D17300E3CFC4 /* ContentView.swift in Sources */,
 				3F9576C52A780C54009E6647 /* DataController.swift in Sources */,
 				3F9576CB2A781805009E6647 /* section_1dot2.swift in Sources */,
+				3F9576D32A7833BB009E6647 /* section_2dot1.swift in Sources */,
 				3F9576C82A780C7E009E6647 /* CoreDataProject.xcdatamodeld in Sources */,
 				3F9576CE2A781B29009E6647 /* Movie+CoreDataClass.swift in Sources */,
 				3F9576CF2A781B29009E6647 /* Movie+CoreDataProperties.swift in Sources */,
