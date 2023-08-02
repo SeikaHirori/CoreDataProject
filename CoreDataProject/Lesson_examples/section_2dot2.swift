@@ -9,13 +9,62 @@ import CoreData
 import SwiftUI
 
 struct section_2dot2: View {
+    @Environment(\.managedObjectContext) var moc
+    @State private var lastNameFilter = "A"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        return VStack {
+            // list of matching singers
+            HStack {
+                Button("Add Examples") {
+                    let taylor: Singer = Singer(context: moc)
+                    taylor.firstName = "Taylor"
+                    taylor.lastName = "Swift"
+                    
+                    let ed: Singer = Singer(context: moc)
+                    ed.firstName = "Ed"
+                    ed.lastName = "Sheeran"
+                    
+                    let adele: Singer = Singer(context: moc)
+                    adele.firstName = "Adele"
+                    adele.lastName = "Adkins"
+                    
+                }
+                .padding()
+                
+                Button("Save") {
+                    do {
+                        if moc.hasChanges {
+                            try moc.save()
+                            print("New entries saved")
+                        }
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                    
+                }
+                .padding()
+            }
+            
+            HStack {
+                Button("Show A") {
+                    lastNameFilter = "A"
+                }
+                
+                Button("Show S") {
+                    lastNameFilter = "S"
+                }
+            }
+        }
+
     }
 }
 
 struct section_2dot2_Previews: PreviewProvider {
+    static var dataController: DataController = DataController()
+    
     static var previews: some View {
         section_2dot2()
+            .environment(\.managedObjectContext, dataController.container.viewContext)
     }
 }
