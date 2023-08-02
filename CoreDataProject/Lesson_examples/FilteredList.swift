@@ -43,12 +43,16 @@ struct FilteredList<T: NSManagedObject, Content: View>: View {
     }
 }
 
-//struct FilteredList_Previews: PreviewProvider {
-//    static var dataController: DataController = DataController()
-//
-//    
-//    static var previews: some View {
-//        FilteredList(filterKey: "lastName", filterValue: "a")
-//            .environment(\.managedObjectContext, dataController.container.viewContext)
-//    }
-//}
+struct FilteredList_Previews: PreviewProvider {
+    static var dataController: DataController = DataController()
+
+    
+    static var previews: some View {
+        
+        // Copy and pasted enclosure from 
+        FilteredList(filterKey: "lastName", filterValue: "a") { (singer:Singer) in
+            Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
+        }
+            .environment(\.managedObjectContext, dataController.container.viewContext)
+    }
+}
