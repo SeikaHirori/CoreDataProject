@@ -49,7 +49,7 @@ struct FilteredList_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        // Copy and pasted enclosure from 
+        // Copy and pasted closure to re-enable previews
         FilteredList(filterKey: "lastName", filterValue: "a") { (singer:Singer) in
             Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
         }
