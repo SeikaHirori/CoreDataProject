@@ -15,7 +15,14 @@ struct section_2dot2: View {
     var body: some View {
         return VStack {
             // list of matching singers
+            FilteredList(filter: lastNameFilter)
+            
             HStack {
+                Button("Add Adele") {
+                    let adele: Singer = Singer(context: moc)
+                    adele.firstName = "Adele"
+                    adele.lastName = "Adkins"
+                }
                 Button("Add Examples") {
                     let taylor: Singer = Singer(context: moc)
                     taylor.firstName = "Taylor"
@@ -24,11 +31,6 @@ struct section_2dot2: View {
                     let ed: Singer = Singer(context: moc)
                     ed.firstName = "Ed"
                     ed.lastName = "Sheeran"
-                    
-                    let adele: Singer = Singer(context: moc)
-                    adele.firstName = "Adele"
-                    adele.lastName = "Adkins"
-                    
                 }
                 .padding()
                 
@@ -37,6 +39,8 @@ struct section_2dot2: View {
                         if moc.hasChanges {
                             try moc.save()
                             print("New entries saved")
+                        } else {
+                            print("Nothing was saved")
                         }
                     } catch {
                         print(error.localizedDescription)
