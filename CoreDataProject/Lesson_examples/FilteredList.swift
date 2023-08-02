@@ -17,8 +17,8 @@ struct FilteredList: View {
 
     }
     
-    init(filter: String) {
-        _fetchRequest = FetchRequest<Singer>(sortDescriptors: [], predicate: NSPredicate(format: "lastName BEGINSWITH[c] %@", filter))
+    init(filterKey: String, filterValue: String) {
+        _fetchRequest = FetchRequest<Singer>(sortDescriptors: [], predicate: NSPredicate(format: "%K BEGINSWITH[c] %@", filterKey,filterValue))
     }
 }
 
@@ -27,7 +27,7 @@ struct FilteredList_Previews: PreviewProvider {
 
     
     static var previews: some View {
-        FilteredList(filter: "a")
+        FilteredList(filterKey: "lastName", filterValue: "a")
             .environment(\.managedObjectContext, dataController.container.viewContext)
     }
 }

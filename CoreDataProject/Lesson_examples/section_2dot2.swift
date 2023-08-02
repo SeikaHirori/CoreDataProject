@@ -10,12 +10,13 @@ import SwiftUI
 
 struct section_2dot2: View {
     @Environment(\.managedObjectContext) var moc
-    @State private var lastNameFilter = "A"
+    @State private var filterValue:String = "A"
+    @State private var filterKey: String = "lastName"
     
     var body: some View {
         return VStack {
             // list of matching singers
-            FilteredList(filter: lastNameFilter)
+            FilteredList(filterKey: filterKey, filterValue: filterValue)
             
             HStack {
                 Button("Add Adele") {
@@ -52,11 +53,20 @@ struct section_2dot2: View {
             
             HStack {
                 Button("Show A") {
-                    lastNameFilter = "A"
+                    filterValue = "A"
                 }
                 
                 Button("Show S") {
-                    lastNameFilter = "S"
+                    filterValue = "S"
+                }
+            }
+            HStack {
+                Button("Show by Last name") {
+                    filterKey = "lastName"
+                }
+                
+                Button("Show by First name") {
+                    filterKey = "firstName"
                 }
             }
         }
