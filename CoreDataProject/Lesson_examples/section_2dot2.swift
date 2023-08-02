@@ -16,7 +16,9 @@ struct section_2dot2: View {
     var body: some View {
         return VStack {
             // list of matching singers
-            FilteredList(filterKey: filterKey, filterValue: filterValue)
+            FilteredList(filterKey: filterKey, filterValue: filterValue) { (singer:Singer) in
+                Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
+            }
             
             HStack {
                 Button("Add Adele") {
