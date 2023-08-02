@@ -2,7 +2,7 @@
 //  Singer+CoreDataClass.swift
 //  CoreDataProject
 //
-//  Created by Seika Hirori on 8/1/23.
+//  Created by Seika Hirori on 8/2/23.
 //
 //
 

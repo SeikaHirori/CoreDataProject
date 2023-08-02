@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3F07E3FB2A79E67300F53C0D /* section_2dot2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07E3FA2A79E67300F53C0D /* section_2dot2.swift */; };
-		3F07E4022A79E70600F53C0D /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07E4002A79E70600F53C0D /* Singer+CoreDataClass.swift */; };
-		3F07E4032A79E70600F53C0D /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07E4012A79E70600F53C0D /* Singer+CoreDataProperties.swift */; };
 		3F07E4052A79EB9D00F53C0D /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F07E4042A79EB9D00F53C0D /* FilteredList.swift */; };
+		3F47EEEE2A7ACBC600616899 /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F47EEEC2A7ACBC600616899 /* Singer+CoreDataClass.swift */; };
+		3F47EEEF2A7ACBC600616899 /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F47EEED2A7ACBC600616899 /* Singer+CoreDataProperties.swift */; };
 		3F6458E22A33D17300E3CFC4 /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6458E12A33D17300E3CFC4 /* CoreDataProjectApp.swift */; };
 		3F6458E42A33D17300E3CFC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6458E32A33D17300E3CFC4 /* ContentView.swift */; };
 		3F6458E62A33D17500E3CFC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6458E52A33D17500E3CFC4 /* Assets.xcassets */; };
@@ -46,9 +46,9 @@
 
 /* Begin PBXFileReference section */
 		3F07E3FA2A79E67300F53C0D /* section_2dot2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = section_2dot2.swift; sourceTree = "<group>"; };
-		3F07E4002A79E70600F53C0D /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3F07E4012A79E70600F53C0D /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F07E4042A79EB9D00F53C0D /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
+		3F47EEEC2A7ACBC600616899 /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F47EEED2A7ACBC600616899 /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F6458DE2A33D17300E3CFC4 /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F6458E12A33D17300E3CFC4 /* CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectApp.swift; sourceTree = "<group>"; };
 		3F6458E32A33D17300E3CFC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 		3F6458D52A33D17300E3CFC4 = {
 			isa = PBXGroup;
 			children = (
-				3F07E4002A79E70600F53C0D /* Singer+CoreDataClass.swift */,
-				3F07E4012A79E70600F53C0D /* Singer+CoreDataProperties.swift */,
+				3F47EEEC2A7ACBC600616899 /* Singer+CoreDataClass.swift */,
+				3F47EEED2A7ACBC600616899 /* Singer+CoreDataProperties.swift */,
 				3F9576CC2A781B29009E6647 /* Movie+CoreDataClass.swift */,
 				3F9576CD2A781B29009E6647 /* Movie+CoreDataProperties.swift */,
 				3F64590C2A33D22800E3CFC4 /* _docs */,
@@ -326,13 +326,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F47EEEF2A7ACBC600616899 /* Singer+CoreDataProperties.swift in Sources */,
 				3F6458E42A33D17300E3CFC4 /* ContentView.swift in Sources */,
-				3F07E4032A79E70600F53C0D /* Singer+CoreDataProperties.swift in Sources */,
 				3F9576C52A780C54009E6647 /* DataController.swift in Sources */,
-				3F07E4022A79E70600F53C0D /* Singer+CoreDataClass.swift in Sources */,
 				3F07E4052A79EB9D00F53C0D /* FilteredList.swift in Sources */,
 				3F9576CB2A781805009E6647 /* section_1dot2.swift in Sources */,
 				3F07E3FB2A79E67300F53C0D /* section_2dot2.swift in Sources */,
+				3F47EEEE2A7ACBC600616899 /* Singer+CoreDataClass.swift in Sources */,
 				3F9576D32A7833BB009E6647 /* section_2dot1.swift in Sources */,
 				3F9576C82A780C7E009E6647 /* CoreDataProject.xcdatamodeld in Sources */,
 				3F9576CE2A781B29009E6647 /* Movie+CoreDataClass.swift in Sources */,

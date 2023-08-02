@@ -2,7 +2,7 @@
 //  Singer+CoreDataProperties.swift
 //  CoreDataProject
 //
-//  Created by Seika Hirori on 8/1/23.
+//  Created by Seika Hirori on 8/2/23.
 //
 //
 
@@ -18,7 +18,7 @@ extension Singer {
 
     @NSManaged public var firstName: String?
     @NSManaged public var lastName: String?
-    
+
     var wrappedFirstName: String {
         firstName ?? "Unknown"
     }
@@ -26,7 +26,6 @@ extension Singer {
     var wrappedLastName: String {
         lastName ?? "Unknown"
     }
-
 }
 
 extension Singer : Identifiable {
