@@ -17,5 +17,5 @@
 
 - [x] Filtering @FetchRequest using NSPredicate
 - [x] Dynamically filtering @FetchRequest with SwiftUI
-- [ ] One-to-many relationships with Core Data, SwiftUI, and @FetchRequest
+- [x] One-to-many relationships with Core Data, SwiftUI, and @FetchRequest
     - NOTE: Commit 2f894e7e710b1b48109c3511af177c8a6baef111 doesn't throw error from CoreData
