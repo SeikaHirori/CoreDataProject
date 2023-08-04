@@ -28,6 +28,13 @@ extension Country {
         fullName ?? "Unknown Country"
     }
 
+    public var candyArray: [Candy] {
+        let set = candy as? Set<Candy> ?? []
+        return set.sorted {
+            $0.wrappedName < $1.wrappedName
+        }
+    }
+    
 }
 
 // MARK: Generated accessors for candy
