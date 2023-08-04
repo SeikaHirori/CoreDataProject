@@ -12,13 +12,41 @@ struct ContentView: View {
     @FetchRequest(sortDescriptors: []) var countries: FetchedResults<Country>
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        return VStack {
+            if countries.isEmpty {
+                Text("empty")
+            } else {
+                List {
+                    ForEach(countries, id: \.self) { country in
+                        Section(country.wrappedFullName) {
+                            ForEach(country.candyArray, id:\.self) { candy in
+                                Text(candy.wrappedName)
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+            HStack {
+                Button("Add") {
+                    addExample()
+                }
+                
+                Button("Save") {
+                    saveExample()
+                }
+            }
         }
         .padding()
+    }
+    
+    func addExample() -> Void {
+        
+    }
+    
+    func saveExample() -> Void {
+        
     }
 }
 
