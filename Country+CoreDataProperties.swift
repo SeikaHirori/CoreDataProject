@@ -19,6 +19,14 @@ extension Country {
     @NSManaged public var fullName: String?
     @NSManaged public var shortName: String?
     @NSManaged public var candy: NSSet?
+    
+    public var wrappedShortName: String {
+        shortName ?? "Unknown Country"
+    }
+    
+    public var wrappedFullName: String {
+        fullName ?? "Unknown Country"
+    }
 
 }
 

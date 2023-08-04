@@ -25,10 +25,10 @@
 		3F9576CF2A781B29009E6647 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576CD2A781B29009E6647 /* Movie+CoreDataProperties.swift */; };
 		3F9576D12A782B0C009E6647 /* section_1dot5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576D02A782B0C009E6647 /* section_1dot5.swift */; };
 		3F9576D32A7833BB009E6647 /* section_2dot1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9576D22A7833BB009E6647 /* section_2dot1.swift */; };
-		3FB86C822A7D8A7700AD75E1 /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB86C7E2A7D8A7700AD75E1 /* Country+CoreDataClass.swift */; };
-		3FB86C832A7D8A7700AD75E1 /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB86C7F2A7D8A7700AD75E1 /* Country+CoreDataProperties.swift */; };
-		3FB86C842A7D8A7700AD75E1 /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB86C802A7D8A7700AD75E1 /* Candy+CoreDataClass.swift */; };
-		3FB86C852A7D8A7700AD75E1 /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB86C812A7D8A7700AD75E1 /* Candy+CoreDataProperties.swift */; };
+		3FB86C8A2A7D8B4200AD75E1 /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB86C862A7D8B4200AD75E1 /* Country+CoreDataClass.swift */; };
+		3FB86C8B2A7D8B4200AD75E1 /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB86C872A7D8B4200AD75E1 /* Country+CoreDataProperties.swift */; };
+		3FB86C8C2A7D8B4200AD75E1 /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB86C882A7D8B4200AD75E1 /* Candy+CoreDataClass.swift */; };
+		3FB86C8D2A7D8B4200AD75E1 /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB86C892A7D8B4200AD75E1 /* Candy+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,10 +72,10 @@
 		3F9576CD2A781B29009E6647 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "CoreDataProject/Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F9576D02A782B0C009E6647 /* section_1dot5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = section_1dot5.swift; sourceTree = "<group>"; };
 		3F9576D22A7833BB009E6647 /* section_2dot1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = section_2dot1.swift; sourceTree = "<group>"; };
-		3FB86C7E2A7D8A7700AD75E1 /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3FB86C7F2A7D8A7700AD75E1 /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3FB86C802A7D8A7700AD75E1 /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3FB86C812A7D8A7700AD75E1 /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3FB86C862A7D8B4200AD75E1 /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3FB86C872A7D8B4200AD75E1 /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3FB86C882A7D8B4200AD75E1 /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3FB86C892A7D8B4200AD75E1 /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +106,10 @@
 		3F6458D52A33D17300E3CFC4 = {
 			isa = PBXGroup;
 			children = (
-				3FB86C7E2A7D8A7700AD75E1 /* Country+CoreDataClass.swift */,
-				3FB86C7F2A7D8A7700AD75E1 /* Country+CoreDataProperties.swift */,
-				3FB86C802A7D8A7700AD75E1 /* Candy+CoreDataClass.swift */,
-				3FB86C812A7D8A7700AD75E1 /* Candy+CoreDataProperties.swift */,
+				3FB86C862A7D8B4200AD75E1 /* Country+CoreDataClass.swift */,
+				3FB86C872A7D8B4200AD75E1 /* Country+CoreDataProperties.swift */,
+				3FB86C882A7D8B4200AD75E1 /* Candy+CoreDataClass.swift */,
+				3FB86C892A7D8B4200AD75E1 /* Candy+CoreDataProperties.swift */,
 				3F47EEEC2A7ACBC600616899 /* Singer+CoreDataClass.swift */,
 				3F47EEED2A7ACBC600616899 /* Singer+CoreDataProperties.swift */,
 				3F9576CC2A781B29009E6647 /* Movie+CoreDataClass.swift */,
@@ -342,11 +342,11 @@
 				3F6458E42A33D17300E3CFC4 /* ContentView.swift in Sources */,
 				3F9576C52A780C54009E6647 /* DataController.swift in Sources */,
 				3F07E4052A79EB9D00F53C0D /* FilteredList.swift in Sources */,
-				3FB86C822A7D8A7700AD75E1 /* Country+CoreDataClass.swift in Sources */,
-				3FB86C832A7D8A7700AD75E1 /* Country+CoreDataProperties.swift in Sources */,
+				3FB86C8A2A7D8B4200AD75E1 /* Country+CoreDataClass.swift in Sources */,
+				3FB86C8B2A7D8B4200AD75E1 /* Country+CoreDataProperties.swift in Sources */,
 				3F9576CB2A781805009E6647 /* section_1dot2.swift in Sources */,
-				3FB86C842A7D8A7700AD75E1 /* Candy+CoreDataClass.swift in Sources */,
-				3FB86C852A7D8A7700AD75E1 /* Candy+CoreDataProperties.swift in Sources */,
+				3FB86C8C2A7D8B4200AD75E1 /* Candy+CoreDataClass.swift in Sources */,
+				3FB86C8D2A7D8B4200AD75E1 /* Candy+CoreDataProperties.swift in Sources */,
 				3F07E3FB2A79E67300F53C0D /* section_2dot2.swift in Sources */,
 				3F47EEEE2A7ACBC600616899 /* Singer+CoreDataClass.swift in Sources */,
 				3F9576D32A7833BB009E6647 /* section_2dot1.swift in Sources */,
