@@ -42,11 +42,20 @@ struct ContentView: View {
     }
     
     func addExample() -> Void {
+        // TODO
         
     }
     
     func saveExample() -> Void {
-        
+        do {
+            if moc.hasChanges {
+                try moc.save()
+            } else {
+                print("nothing to change :O")
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 }
 
