@@ -27,6 +27,7 @@ import SwiftUI
  // Focused on generics
 struct FilteredList<T: NSManagedObject, Content: View>: View {
     @FetchRequest var fetchRequest: FetchedResults<T>
+    let sortedDescript: [SortDescriptor] = [SortDescriptor<Any>]()
     
     // this is our content closure; we'll call this once for each item in the list
     let content: (T) -> Content
@@ -37,8 +38,16 @@ struct FilteredList<T: NSManagedObject, Content: View>: View {
         }
     }
     
-    init(filterKey: String, filterValue: String, @ViewBuilder content: @escaping (T) -> Content) {
-        _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%K BEGINSWITH[c] %@", filterKey,filterValue))
+    init(sortedDescriptors: [SortDescriptor<Any>],filterKey: String, filterValue: String, @ViewBuilder content: @escaping (T) -> Content) {
+        
+        
+        
+        if filterValue.isEmpty {
+            _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: nil)
+        } else {
+            _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%K BEGINSWITH[c] %@", filterKey, filterValue))
+        }
+            
         self.content = content
     }
 }
@@ -50,7 +59,7 @@ struct FilteredList_Previews: PreviewProvider {
     static var previews: some View {
         
         // Copy and pasted closure to re-enable previews
-        FilteredList(filterKey: "lastName", filterValue: "a") { (singer:Singer) in
+        FilteredList(filterKey: "lastName", filterValue: "") { (singer:Singer) in
             Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
         }
             .environment(\.managedObjectContext, dataController.container.viewContext)

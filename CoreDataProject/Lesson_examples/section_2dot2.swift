@@ -10,11 +10,21 @@ import SwiftUI
 
 struct section_2dot2: View {
     @Environment(\.managedObjectContext) var moc
-    @State private var filterValue:String = "A"
+    @State private var filterValue:String = ""
     @State private var filterKey: String = "lastName"
     
     var body: some View {
         return VStack {
+            HStack {
+                TextField(
+                    "Value",
+                    text: $filterValue
+                )
+            }
+            .padding()
+            .border(.green)
+            .clipShape(Capsule())
+            
             // list of matching singers
             FilteredList(filterKey: filterKey, filterValue: filterValue) { (singer:Singer) in
                 Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
@@ -53,24 +63,7 @@ struct section_2dot2: View {
                 .padding()
             }
             
-            HStack {
-//                Button("Show E") {
-//                    filterValue = "e"
-//                }
-//
-//                Button("Show A") {
-//                    filterValue = "A"
-//                }
-//
-//                Button("Show S") {
-//                    filterValue = "S"
-//                }
-                TextField(
-                    "Value",
-                    text: $filterValue
-                )
-            }
-            .padding()
+            
             
             HStack {
                 Button("Show by Last name") {
