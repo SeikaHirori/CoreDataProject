@@ -54,27 +54,44 @@ struct section_2dot2: View {
             }
             
             HStack {
-                Button("Show A") {
-                    filterValue = "A"
-                }
-                
-                Button("Show S") {
-                    filterValue = "S"
-                }
+//                Button("Show E") {
+//                    filterValue = "e"
+//                }
+//
+//                Button("Show A") {
+//                    filterValue = "A"
+//                }
+//
+//                Button("Show S") {
+//                    filterValue = "S"
+//                }
+                TextField(
+                    "Value",
+                    text: $filterValue
+                )
             }
+            .padding()
+            
             HStack {
                 Button("Show by Last name") {
                     filterKey = "lastName"
+                    print("Changed to \(filterKey)")
                 }
+                .background(filterKey == "lastName" ? .primary: Color.secondary)
                 
                 Button("Show by First name") {
                     filterKey = "firstName"
+                    print("Changed to \(filterKey)")
                 }
-            }
+                .background(filterKey == "firstName" ? .primary: Color.secondary)            }
         }
 
     }
+    
+    
 }
+
+
 
 struct section_2dot2_Previews: PreviewProvider {
     static var dataController: DataController = DataController()
@@ -84,3 +101,5 @@ struct section_2dot2_Previews: PreviewProvider {
             .environment(\.managedObjectContext, dataController.container.viewContext)
     }
 }
+
+
