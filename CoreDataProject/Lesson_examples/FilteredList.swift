@@ -38,7 +38,7 @@ struct FilteredList<T: NSManagedObject, Content: View>: View {
         }
     }
     
-    init(sortedDescriptors: [SortDescriptor<Any>],filterKey: String, filterValue: String, @ViewBuilder content: @escaping (T) -> Content) {
+    init(sortedDescriptorType: [NSSortDescriptor],filterKey: String, filterValue: String, @ViewBuilder content: @escaping (T) -> Content) {
         
         
         
@@ -59,7 +59,7 @@ struct FilteredList_Previews: PreviewProvider {
     static var previews: some View {
         
         // Copy and pasted closure to re-enable previews
-        FilteredList(filterKey: "lastName", filterValue: "") { (singer:Singer) in
+        FilteredList(sortedDescriptorType: [], filterKey: "lastName", filterValue: "") { (singer:Singer) in
             Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
         }
             .environment(\.managedObjectContext, dataController.container.viewContext)

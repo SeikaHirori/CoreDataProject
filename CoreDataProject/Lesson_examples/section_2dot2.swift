@@ -26,7 +26,7 @@ struct section_2dot2: View {
             .clipShape(Capsule())
             
             // list of matching singers
-            FilteredList(filterKey: filterKey, filterValue: filterValue) { (singer:Singer) in
+            FilteredList(sortedDescriptorType: [], filterKey: filterKey, filterValue: filterValue) { (singer:Singer) in
                 Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
             }
             
@@ -80,8 +80,7 @@ struct section_2dot2: View {
         }
 
     }
-    
-    
+
 }
 
 
