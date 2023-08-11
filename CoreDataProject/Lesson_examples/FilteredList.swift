@@ -38,14 +38,14 @@ struct FilteredList<T: NSManagedObject, Content: View>: View {
         }
     }
     
-    init(sortedDescriptorType: [NSSortDescriptor],filterKey: String, filterValue: String, nsParameter: String, @ViewBuilder content: @escaping (T) -> Content) {
+    init(sortedDescriptorType: [NSSortDescriptor] = [],filterKey: String, filterValue: String, nsParameter: String, @ViewBuilder content: @escaping (T) -> Content) {
         
         
         
         if filterValue.isEmpty {
-            _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: nil)
+            _fetchRequest = FetchRequest<T>(sortDescriptors: sortedDescriptorType, predicate: nil)
         } else {
-            _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%K \(nsParameter) %@", filterKey, filterValue))
+            _fetchRequest = FetchRequest<T>(sortDescriptors: sortedDescriptorType, predicate: NSPredicate(format: "%K \(nsParameter) %@", filterKey, filterValue))
         }
             
         self.content = content
