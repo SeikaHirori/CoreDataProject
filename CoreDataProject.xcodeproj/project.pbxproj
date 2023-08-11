@@ -29,6 +29,7 @@
 		3FB86C8B2A7D8B4200AD75E1 /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB86C872A7D8B4200AD75E1 /* Country+CoreDataProperties.swift */; };
 		3FB86C8C2A7D8B4200AD75E1 /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB86C882A7D8B4200AD75E1 /* Candy+CoreDataClass.swift */; };
 		3FB86C8D2A7D8B4200AD75E1 /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB86C892A7D8B4200AD75E1 /* Candy+CoreDataProperties.swift */; };
+		3FF911692A86B77D00AE2BFF /* nsParameterString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF911682A86B77D00AE2BFF /* nsParameterString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		3FB86C872A7D8B4200AD75E1 /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3FB86C882A7D8B4200AD75E1 /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3FB86C892A7D8B4200AD75E1 /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3FF911682A86B77D00AE2BFF /* nsParameterString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nsParameterString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			children = (
 				3F9576C42A780C54009E6647 /* DataController.swift */,
 				3F9576C62A780C7E009E6647 /* CoreDataProject.xcdatamodeld */,
+				3FF911682A86B77D00AE2BFF /* nsParameterString.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				3F47EEEE2A7ACBC600616899 /* Singer+CoreDataClass.swift in Sources */,
 				3F9576D32A7833BB009E6647 /* section_2dot1.swift in Sources */,
 				3F9576C82A780C7E009E6647 /* CoreDataProject.xcdatamodeld in Sources */,
+				3FF911692A86B77D00AE2BFF /* nsParameterString.swift in Sources */,
 				3F9576CE2A781B29009E6647 /* Movie+CoreDataClass.swift in Sources */,
 				3F9576CF2A781B29009E6647 /* Movie+CoreDataProperties.swift in Sources */,
 				3F6458E22A33D17300E3CFC4 /* CoreDataProjectApp.swift in Sources */,

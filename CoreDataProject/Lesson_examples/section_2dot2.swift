@@ -12,6 +12,7 @@ struct section_2dot2: View {
     @Environment(\.managedObjectContext) var moc
     @State private var filterValue:String = ""
     @State private var filterKey: String = "lastName"
+    @State private var chosenNSParameter: nsParameterString = .beginsWithCaseInS
     
     var body: some View {
         return VStack {
@@ -21,12 +22,13 @@ struct section_2dot2: View {
                     text: $filterValue
                 )
             }
+            .textInputAutocapitalization(.never)
             .padding()
             .border(.green)
             .clipShape(Capsule())
             
             // list of matching singers
-            FilteredList(sortedDescriptorType: [], filterKey: filterKey, filterValue: filterValue) { (singer:Singer) in
+            FilteredList(sortedDescriptorType: [], filterKey: filterKey, filterValue: filterValue, nsParameter: chosenNSParameter.rawValue) { (singer:Singer) in
                 Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
             }
             
@@ -63,6 +65,11 @@ struct section_2dot2: View {
                 .padding()
             }
             
+            Picker("Search Condition", selection: $chosenNSParameter) {
+                ForEach(nsParameterString.allCases) {
+                    Text($0.rawValue.capitalized)
+                }
+            }
             
             
             HStack {
@@ -81,6 +88,7 @@ struct section_2dot2: View {
 
     }
 
+    
 }
 
 

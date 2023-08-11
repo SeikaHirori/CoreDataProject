@@ -38,14 +38,14 @@ struct FilteredList<T: NSManagedObject, Content: View>: View {
         }
     }
     
-    init(sortedDescriptorType: [NSSortDescriptor],filterKey: String, filterValue: String, @ViewBuilder content: @escaping (T) -> Content) {
+    init(sortedDescriptorType: [NSSortDescriptor],filterKey: String, filterValue: String, nsParameter: String, @ViewBuilder content: @escaping (T) -> Content) {
         
         
         
         if filterValue.isEmpty {
             _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: nil)
         } else {
-            _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%K BEGINSWITH[c] %@", filterKey, filterValue))
+            _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%K \(nsParameter) %@", filterKey, filterValue))
         }
             
         self.content = content
@@ -59,7 +59,7 @@ struct FilteredList_Previews: PreviewProvider {
     static var previews: some View {
         
         // Copy and pasted closure to re-enable previews
-        FilteredList(sortedDescriptorType: [], filterKey: "lastName", filterValue: "") { (singer:Singer) in
+        FilteredList(sortedDescriptorType: [], filterKey: "lastName", filterValue: "", nsParameter: "BEGINSWITH[c]") { (singer:Singer) in
             Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
         }
             .environment(\.managedObjectContext, dataController.container.viewContext)
