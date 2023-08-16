@@ -26,3 +26,8 @@
         - 9ec40b659c0592165baa363b9be19ee43f1d8440
 - [x] Modify the predicate string parameter to be an enum such as .beginsWith, then make that enum get resolved to a string inside the initializer.
 - [ ] Make FilteredList accept an array of SortDescriptor objects to get used in its fetch request.
+    - OUTLINE:
+        - Create a list for NS's SortDescriptor that contains the following items from the entity "Singer"
+            - Example of toggleable items:
+                - `SortDescriptor(\.firstName)`
+                - `SortDescriptor(\.lastName)`
